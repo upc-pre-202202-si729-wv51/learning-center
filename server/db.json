@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 25,
+      "address": "NoWhere"
+    },
+    {
+      "id": 2,
+      "name": "Jason Bourne",
+      "age": 34,
+      "address": "Unknown"
+    },
+    {
+      "id": 3,
+      "name": "William Norton",
+      "age": 30,
+      "address": "One Place"
+    },
+    {
+      "id": 4,
+      "name": "Steven Strange",
+      "age": 40,
+      "address": "New York"
+    },
+    {
+      "name": "Bruce Banner",
+      "age": 45,
+      "address": "Phase 1",
+      "id": 5
+    }
+  ]
+}
