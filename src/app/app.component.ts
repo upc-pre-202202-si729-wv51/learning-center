@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learning-center';
+  options = [
+    { path: '/home', title: 'Home'},
+    { path: '/students', title: 'Students'},
+    { path: '/about', title: 'About'}
+  ];
 }

@@ -51,7 +51,7 @@ export class StudentsService {
 
   // Get All Students
   getAll(): Observable<Student> {
-    return this.http.get(this.basePath, this.httpOptions)
+    return this.http.get<Student>(this.basePath, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
