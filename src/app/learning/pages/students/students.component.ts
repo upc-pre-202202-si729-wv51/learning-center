@@ -84,4 +84,20 @@ export class StudentsComponent implements OnInit, AfterViewInit {
     });
   }
 
+  onSubmit() {
+    if (this.studentForm.form.valid) {
+      console.log('valid');
+      if (this.isEditMode) {
+        console.log('about to update');
+        this.updateStudent();
+      } else {
+        console.log('about to add');
+        this.addStudent();
+      }
+      this.cancelEdit();
+    } else {
+      console.log('invalid data')
+    }
+  }
+
 }
