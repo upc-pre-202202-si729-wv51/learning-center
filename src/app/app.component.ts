@@ -10,6 +10,7 @@ export class AppComponent {
   options = [
     { path: '/home', title: 'Home'},
     { path: '/students', title: 'Students'},
+    { path: '/instructors', title: 'Instructors'},
     { path: '/about', title: 'About'}
   ];
 }
