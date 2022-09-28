@@ -6,6 +6,7 @@ import {catchError, Observable, retry} from "rxjs";
 import {AuthenticationResponse} from "../model/authentication-response";
 
 const TOKEN_KEY = 'accessToken';
+const CURRENT_USER_KEY = 'currentUser';
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,11 @@ export class AuthService extends BaseService {
   // Set Token
   setToken(accessToken: string) {
     localStorage.setItem(TOKEN_KEY, accessToken);
+  }
+
+  // Set Current User
+  setCurrentUser(currentUser: User) {
+    localStorage.setItem(CURRENT_USER_KEY, currentUser);
   }
 
   // Check if signed in

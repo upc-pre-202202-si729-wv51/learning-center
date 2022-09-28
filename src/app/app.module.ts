@@ -24,6 +24,7 @@ import { AboutComponent } from './public/pages/about/about.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import {InstructorsService} from "./learning/services/instructors.service";
 import { InstructorsComponent } from './learning/pages/instructors/instructors.component';
+import { SignInComponent } from './security/pages/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { InstructorsComponent } from './learning/pages/instructors/instructors.c
     HomeComponent,
     AboutComponent,
     PageNotFoundComponent,
-    InstructorsComponent
+    InstructorsComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
