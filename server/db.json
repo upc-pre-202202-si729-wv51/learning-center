@@ -40,5 +40,14 @@
       "id": 2,
       "name": "Jason Bourne"
     }
+  ],
+  "users": [
+    {
+      "email": "john.doe@gmail.com",
+      "password": "$2a$10$z3y065XXvTWH7FavoFOkU.UU6qW0yP6CA9J.6eIc/2Vvp8coHf1wa",
+      "firstName": "John",
+      "lastName": "Doe",
+      "id": 1
+    }
   ]
 }
