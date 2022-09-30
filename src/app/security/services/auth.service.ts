@@ -43,7 +43,7 @@ export class AuthService extends BaseService {
 
   // Set Current User
   setCurrentUser(currentUser: User) {
-    localStorage.setItem(CURRENT_USER_KEY, currentUser);
+    localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(currentUser));
   }
 
   // Check if signed in
