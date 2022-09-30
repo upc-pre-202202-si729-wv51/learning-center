@@ -25,6 +25,7 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import {InstructorsService} from "./learning/services/instructors.service";
 import { InstructorsComponent } from './learning/pages/instructors/instructors.component';
 import { SignInComponent } from './security/pages/sign-in/sign-in.component';
+import {AuthService} from "./security/services/auth.service";
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { SignInComponent } from './security/pages/sign-in/sign-in.component';
     MatGridListModule,
     MatDividerModule
   ],
-  providers: [StudentsService, InstructorsService],
+  providers: [StudentsService, InstructorsService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -46,6 +46,12 @@ export class AuthService extends BaseService {
     localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(currentUser));
   }
 
+  // Get Current User
+  getCurrentUser() {
+    const user = localStorage.getItem(CURRENT_USER_KEY);
+    return user ? JSON.parse(user) as User : null;
+  }
+
   // Check if signed in
   get isSignedIn(): boolean {
     return this.getToken() != null;
@@ -55,6 +61,7 @@ export class AuthService extends BaseService {
 
   signOut() {
     localStorage.removeItem(TOKEN_KEY);
+    localStorage.removeItem(CURRENT_USER_KEY);
   }
 
 }

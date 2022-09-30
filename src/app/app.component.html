@@ -5,6 +5,12 @@
   <!-- App Options -->
   <a mat-button *ngFor="let option of options"
      [routerLink]="option.path">{{ option.title }}</a>
+  <mat-divider [vertical]="true" [inset]="true"></mat-divider>
+  <a *ngIf="getCurrentUserEmail === null" mat-button [routerLink]="'/sign-in'">Sign-In</a>
+  <div *ngIf="getCurrentUserEmail">
+    <a mat-button>{{ getCurrentUserEmail() }}</a>
+    <a mat-button (click)="signOut()">Sign-Out</a>
+  </div>
 
 </mat-toolbar>
 <router-outlet></router-outlet>
